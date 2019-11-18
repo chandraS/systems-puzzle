@@ -12,6 +12,8 @@ services:
     build: .
     env_file:
       - env_file
+    ports:
+      - "5001:5001"
     volumes:
       - .:/opt/services/flaskapp/src
     networks:
